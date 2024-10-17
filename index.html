@@ -109,17 +109,17 @@
 
 <script>
     document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Simple validation check
-        let name = document.getElementById('name').value;
-        let email = document.getElementById('email').value;
-        let message = document.getElementById('message').value;
+    // Simple validation check
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
 
-        if (name && email && message) {
-            // Show the download link after form submission
-            document.getElementById('downloadLink').style.display = 'block';
-        }
-    });
+    if (name && email && message) {
+        // Show the download link after form submission
+        document.getElementById('downloadLink').style.display = 'block';
+    window.location.href = 'previous question bsc III CS.pdf'
+    }
+});
 </script>
 
 </body>
