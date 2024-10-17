@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc TY Computer Science - Previous Year Question Paper</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #0073e6;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .feedback-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .feedback-button:hover {
+            background-color: #218838;
+        }
+
+        .download-link {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .download-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .download-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>B.Sc TY Computer Science</h1>
+    <p>Previous Year Question Paper</p>
+
+   
+    
+    <form id="feedbackForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a76c3563-8ffe-49c5-ad2e-8a221e18b963">
+            <label for="name">Name:</label>         
+            <input type="text" id="name" name="name" placeholder=" Name...";required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder=" E-mail..." required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="feedback-button"> download pdf file</button>
+        </form>
+    <div class="download-link" id="downloadLink">
+        <p>Thank you for your feedback! Download the PDF:</p>
+        <a href="previous question bsc III CS.pdf" download>Download Question Paper</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Simple validation check
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            // Show the download link after form submission
+            document.getElementById('downloadLink').style.display = 'block';
+        }
+    });
+</script>
+
+</body>
+</html
